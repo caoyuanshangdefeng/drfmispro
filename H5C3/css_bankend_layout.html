@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理系统布局示例 </title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        section {
+            min-width: 400px;
+            background: rgb(247, 247, 247);
+        }
+        article{
+            float: left;
+            height:100%;
+            min-height: 200px;
+            width: 230px;
+            margin-left: -100%; 
+            background: rgb(175, 58, 23);
+        }
+        address{
+            float: left;
+            height:100%;
+            min-height: 200px;
+            width:100%;
+            background: lightgreen;
+        }
+        .content{
+            margin:0 0 0 230px;
+        }
+        .header{
+            height:50px;
+            background: #37BDE7;
+            text-align: center;
+        }
+        .main{
+            position: absolute;
+            top:50px;
+            bottom:0;
+            width:100%;
+            background: #EB9E05;
+            margin-left:-230px;
+            overflow: auto;/*出现滚动条*/
+        }
+        .main-box{
+            padding-left: 230px;
+        }
+        .logo{
+            height:50px;
+            background: #710080;
+        }
+        .nav{
+            position: absolute;
+            top:50px;
+            bottom:0;
+            width: 230px;
+            background: #d11453;
+            overflow: auto;/*出现滚动条*/
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <!-- 头部 / 主体内容 -->
+        <address>
+            <div class="content">
+                <div class="header">
+                    头部
+                </div>
+
+                <div class="main">
+                    <div class="main-box">
+                        <h1>内容(超出会出现滚动条)</h1>
+                    </div>
+                </div>
+            </div>
+        </address>
+        <!-- END -->
+
+        <!-- 左侧导航 -->
+        <article>
+            <div class="logo">
+                logo
+            </div>
+
+            <nav class="nav">
+                <h1>导航(超出会出现滚动条)</h1>
+            </nav>
+        </article>
+        <!-- END -->
+        
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CSS https://boxicons.com/usage#html -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./sidebar_bak.css" class="css">
+    <title>Sidebar </title>
+</head>
+
+<body>
+    <!-- <div class="sidebar close"> -->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-data'></i>
+            <span class="logo_name">Coding</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link-name" href="#">Category</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Category</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Card Design</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name">Posts</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Posts</a></li>
+                    <li><a href="#">H5C3</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Go</a></li>
+                    <li><a href="#">Rust</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">SpringBoot</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="link_name">Analytics</span>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Analytics</a></li>
+                </ul>
+
+
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="link_name">Chart</span>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Chart</a></li>
+                </ul>
+
+
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-plug'></i>
+                        <span class="link_name">Plugins</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Plugins</a></li>
+                    <li><a href="#">UI Page</a></li>
+                    <li><a href="#">Icons</a></li>
+                    <li><a href="#">Image</a></li>
+                    <li><a href="#">Movie</a></li>
+                    <li><a href="#">Music</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-compass'></i>
+                        <span class="link_name">Explore</span>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Explore</a></li>
+                </ul>
+
+
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-history'></i>
+                        <span class="link_name">History</span>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">History</a></li>
+                </ul>
+
+
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-cog'></i>
+                        <span class="link_name">Settings11111111111111</span>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="./img/you.jpg" alt="profile">
+                    </div>
+
+                    <div class="name-job">
+                        <div class="profile-name">You</div>
+                        <div class="job">Web Designer</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Drop Down Sidebar</span>
+        </div>
+    </section>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+
+    </script>
+</body>
+
+</html>

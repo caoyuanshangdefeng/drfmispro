@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Butler_light;
+    font-weight: 700;
+    src:format('truetype');
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: Butler_Black;
+    font-weight: 700;
+    src:format('truetype');
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Butler_light;
+}
+body {
+    background-image: url(../asset/body_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffff;
+}
+
+.content {
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    .introduce {
+        width:50%;
+        height: 100%;
+        position: relative;
+        font-family: Butler_Black;
+        .introduce-content{
+            .tips{
+                margin:20px 0;
+                font-size: 25px;
+                position: absolute;
+                left:20%;
+                top:40%;
+                transform: translateY(-50%);
+                font-family: Butler_Black;
+            }
+        }
+    }
+    .from-wrapper {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: ;
+    }
+}
